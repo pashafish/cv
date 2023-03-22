@@ -1,0 +1,28 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="XMidYMid meet" viewBox="0 0 500 500">
+<defs>
+<g id="cat_animation_15_Layer4_0_FILL">
+<path style="fill: var(--card-bg-col)" stroke="none" d="
+M 131 138.6
+Q 121.65 133.35 109.3 128.65 64.55 112.75 1.7 112.75 0.45 112.75 -0.8 112.75 -62.7 113.05 -106.45 128.65 -151.15 145.1 -151.15 168.6 -151.15 191.55 -106.45 208 -62.7 224.15 -0.8 224.45 0.45 224.45 1.7 224.45 54.6 224.45 94.6 212.7 102.2 210.95 109.3 208 154.5 191.55 154.5 168.6 154.5 151.6 131 138.6 Z"/>
+</g>
+
+<g id="cat_animation_15_Layer1_0_FILL">
+<path style="fill: var(--bg-col)" stroke="none" d="
+M -0.8 226.95
+Q -65.5 226.65 -111.25 209.8 -155.5435546875 193.486328125 -157.85 171.1
+L -241.7 171.1 -241.7 302.35 246.75 302.35 246.75 171.1 161.2 171.1
+Q 158.915234375 193.486328125 114.1 209.8 106.7 212.85 98.75 214.7 57 226.95 1.7 226.95 0.45 226.95 -0.8 226.95 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 248.75,200.6) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#cat_animation_15_Layer4_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#cat_animation_15_Layer1_0_FILL"/>
+</g>
+</g>
+</svg>

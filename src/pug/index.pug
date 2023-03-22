@@ -1,0 +1,262 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, height=device-height, initial-scale=1.0")
+    meta(name="description", content="Представляю вашему вниманию свое резюме на должность Junior Frontend Developer", data-lang-id="head-meta-descr")
+    meta(name="robots", content="noindex, nofollow")
+    link(rel="shortcut icon", href="img/favicon.svg", type="image/svg+xml")
+    title(data-lang-id="head-title") Павел Карпов &mdash; резюме
+
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap", rel="stylesheet")
+
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/main.css")
+
+    link(rel="preload", href="lang/en.json", as="fetch", crossorigin)
+
+    script(src="plugins/focus-visible.js", defer)
+    script(src="js/main.js", defer)
+  body.stop-scroll
+    include metrika.html
+    h1.visually-hidden(data-lang-id="body-h1") Резюме Павла Карпова
+    .intro.intro--active
+      svg.intro__svg
+        use(xlink:href="img/cat-animation.svg#cat0001")
+    .container
+      .site-grid
+        aside.aside
+          .aside__wrapper
+            .aside__sticky
+              .aside__block
+                .aside__hero-bg
+                  img.aside__hero-img(src="img/me.png", alt="Павел Карпов")
+              .aside__block
+                .aside__tag
+                  svg.aside__tag-icon
+                    use(xlink:href="img/sprite.svg#aside-tag")
+                  span.aside__tag-span(data-lang-id="aside-tag-span") Junior Frontend Developer
+              .aside__block.aside__block--mobile-last-visible
+                h2.h2(data-lang-id="aside-my-name-h2") &lt;моё-имя/&gt;
+                p.aside__name(data-lang-id="aside-my-name-content") Павел Карпов
+              .aside__burger
+                .aside__burger-inner
+                  button.aside__burger-btn
+                    svg
+                      use(xlink:href="img/sprite.svg#burger-cat")
+                    span(data-lang-id="aside-burger-btn") Ещё кое-что...
+                  .aside__burger-wrapper
+                    .aside__block#contacts
+                      h2.h2(data-lang-id="aside-contacts-h2") &lt;контакты-и-ссылки/&gt;
+                      ul.list-reset.site-container
+                        li.site-container__row
+                          a(href="tel:+79629320233").site-container__link
+                            svg.site-icon
+                              use(xlink:href="img/sprite.svg#phone")
+                            span.bold.site-text(data-lang-id="aside-contacts-content-tel") +7&nbsp;962 932-02-33
+                        li.site-container__row
+                          a(href="mailto:hi@astro-cat.pro").site-container__link
+                            svg.site-icon
+                              use(xlink:href="img/sprite.svg#email")
+                            span.bold.site-text(data-lang-id="aside-contacts-content-email") hi@<wbr>astro-cat<wbr>.pro
+                        li.site-container__row
+                          a(href="https://github.com/pashafish", target="_blank").site-container__link
+                            svg.site-icon
+                              use(xlink:href="img/sprite.svg#git")
+                            span.bold.site-text(data-lang-id="aside-contacts-content-git") github.com/<wbr>pashafish
+                    .aside__block#hobbies
+                      h2.h2(data-lang-id="aside-hobbies-h2") &lt;мои-увлечения/&gt;
+                      ul.list-reset.site-container
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#web-layout")
+                          p.bold.primary.site-text(data-lang-id="aside-hobbies-content-1") Веб-разработка
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#graph-design")
+                          p.bold.primary.site-text(data-lang-id="aside-hobbies-content-2") Графический дизайн
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#moovies")
+                          p.bold.primary.site-text(data-lang-id="aside-hobbies-content-3") Фильмы и&nbsp;сериалы
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#music")
+                          p.bold.primary.site-text(data-lang-id="aside-hobbies-content-4") Музыка и&nbsp;караоке
+                    .aside__block#languages
+                      h2.h2(data-lang-id="aside-languages-h2") &lt;языки/&gt;
+                      ul.list-reset.site-container
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#russian")
+                          .wrapper
+                            h3.h3.primary(data-lang-id="aside-languages-content-ru-h3") Русский
+                            p.site-text(data-lang-id="aside-languages-content-ru-content") Родной язык. Отличная устная и&nbsp;письменная речь.
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#english")
+                          .wrapper
+                            h3.h3.primary(data-lang-id="aside-languages-content-en-h3") Английский
+                            p.site-text(data-lang-id="aside-languages-content-en-content") Высокий уровень владения языком. Отлично понимаю тексты. Работал с&nbsp;научной и&nbsp;технической литературой.
+                    .aside__block#programs
+                      h2.h2(data-lang-id="aside-programs-h2") &lt;программы/&gt;
+                      ul.list-reset.site-container.aside__prog-grid
+                        li.aside__prog-grid-item
+                          svg.aside__prog-grid-icon
+                            use(xlink:href="img/sprite.svg#vs-code")
+                        li.aside__prog-grid-item
+                          svg.aside__prog-grid-icon
+                            use(xlink:href="img/sprite.svg#figma")
+                        li.aside__prog-grid-item
+                          svg.aside__prog-grid-icon
+                            use(xlink:href="img/sprite.svg#ms-office")
+                        li.aside__prog-grid-item
+                          svg.aside__prog-grid-icon
+                            use(xlink:href="img/sprite.svg#photoshop")
+                        li.aside__prog-grid-item
+                          svg.aside__prog-grid-icon
+                            use(xlink:href="img/sprite.svg#illustrator")
+                    .aside__block#location
+                      h2.h2(data-lang-id="aside-location-h2") &lt;где-я-живу/&gt;
+                      ul.list-reset.site-container
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#moscow")
+                          p.bold.primary.site-text(data-lang-id="aside-location-content-city") Москва
+                        li.site-container__row
+                          svg.site-icon
+                            use(xlink:href="img/sprite.svg#metro")
+                          p.bold.primary.site-text(data-lang-id="aside-location-content-metro") Селигерская
+        main.main
+          .main__wrapper
+            .main__sticky
+              .main__block
+                h2.h2(data-lang-id="main-nav-h2") &lt;меню/&gt;
+                nav.main__nav
+                  ul.list-reset.main__nav-list
+                    li.main__nav-item
+                      a.main__nav-link(href="#hard-skills", tabindex="2", data-lang-id="main-nav-content-1") &lt;hard-skills/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#soft-skills", tabindex="2", data-lang-id="main-nav-content-2") &lt;soft-skills/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#work", tabindex="2", data-lang-id="main-nav-content-3") &lt;опыт-работы/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#education", tabindex="2", data-lang-id="main-nav-content-4") &lt;oбразование/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#about", tabindex="2", data-lang-id="main-nav-content-5") &lt;обо-мне/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#contacts", tabindex="2", data-lang-id="main-nav-content-6") &lt;контакты-и-ссылки/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#hobbies", tabindex="2", data-lang-id="main-nav-content-7") &lt;интересы/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#languages", tabindex="2", data-lang-id="main-nav-content-8") &lt;языки/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#programs", tabindex="2", data-lang-id="main-nav-content-9") &lt;программы/&gt;
+                    li.main__nav-item
+                      a.main__nav-link(href="#location", tabindex="2", data-lang-id="main-nav-content-10") &lt;где-я-живу/&gt;
+              .main__block#about
+                h2.h2(data-lang-id="main-about-h2") &lt;немного-обо-мне/&gt;
+                .site-container
+                  p.site-text(data-lang-id="main-about-content") Увлекаюсь веб-разработкой ещё со&nbsp;школьных времён. Сейчас я&nbsp;решил превратить хобби в&nbsp;профессию, которая приносила&nbsp;бы мне удовольствие и&nbsp;доход. На&nbsp;первое место ставлю качество результата. Для меня важна визуальная составляющая работы, поэтому frontend-разработка мне пришлась особенно по&nbsp;душе.
+              .main__block
+                h2.h2(data-lang-id="main-cats-h2") &lt;&#128570;-котики/&gt;
+                .site-container.cats-container
+              .main__colums
+                .main__colums-col#hard-skills
+                  h2.h2(data-lang-id="main-hardskills-h2") &lt;hard-skills/&gt;
+                  .site-container
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-1") Умею верстать на&nbsp;<span class="bold primary">HTML5</span>, правильно использовать семантические тэги
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-2") Владею <span class="bold primary">CSS3</span>, знаю как обеспечить кроссбраузерность вёрстки
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-3") Знаю как сделать вёрстку адаптивной, умею работать с&nbsp;<span class="bold primary">Flexbox</span>, <span class="bold primary">CSS-grid</span> и&nbsp;<span class="bold primary">Bootstrap</span>
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-4") Знаком с&nbsp;<span class="bold primary">JavaScript</span>, умею использовать различные плагины в&nbsp;работе
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-5") Умею делать красивые анимации на&nbsp;CSS и&nbsp;JS (с&nbsp;использование <span class="bold primary">requestAnimationFrame</span>, а&nbsp;также библиотеки <span class="bold primary">GreenSock</span>)
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-6") Знаю способы <span class="bold primary">оптимизации процесса загрузки</span> страницы
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-7") Умею автоматизировать сборку с&nbsp;помощю <span class="bold primary">Gulp</span>, знаком с&nbsp;препроцессорами <span class="bold primary">Sass</span> и&nbsp;<span class="bold primary">Pug</span>
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-8") Имею представление о&nbsp;JS-фреймворках <span class="bold primary">React</span> и&nbsp;<span class="bold primary">Vue</span>
+                    ul.site-list
+                      li.site-list-item(data-lang-id="main-hardskills-content-9") Умею работать с&nbsp;<span class="bold primary">Git</span>
+                .main__colums-col#soft-skills
+                  h2.h2(data-lang-id="main-softskills-h2") &lt;soft-skills/&gt;
+                  ul.list-reset.site-container
+                    li.site-container__row
+                      svg.site-icon
+                        use(xlink:href="img/sprite.svg#rocket")
+                      p.bold.primary.site-text(data-lang-id="main-softskills-content-1") Энтузиазм
+                    li.site-container__row
+                      svg.site-icon
+                        use(xlink:href="img/sprite.svg#mountain")
+                      p.bold.primary.site-text(data-lang-id="main-softskills-content-2") Настойчивость
+                    li.site-container__row
+                      svg.site-icon
+                        use(xlink:href="img/sprite.svg#speak")
+                      p.bold.primary.site-text(data-lang-id="main-softskills-content-3") Аргументация
+                    li.site-container__row
+                      svg.site-icon
+                        use(xlink:href="img/sprite.svg#creative")
+                      p.bold.primary.site-text(data-lang-id="main-softskills-content-4") Творческий подход
+                    li.site-container__row
+                      svg.site-icon
+                        use(xlink:href="img/sprite.svg#presentation")
+                      p.bold.primary.site-text(data-lang-id="main-softskills-content-5") Презентация
+                .main__colums-col#education
+                  h2.h2(data-lang-id="main-education-h2") &lt;образование/&gt;
+                  .site-container
+                    .timeline
+                      .timeline__line
+                      .timeline__content
+                        .timeline__row
+                          span.timeline__time.secondary.bold(data-lang-id="main-education-content-1-startdate") сент 2022
+                          .wrapper
+                            h3.h3.primary(data-lang-id="main-education-content-1-h3") Платформа Skillbox
+                            p.site-text-small(data-lang-id="main-education-content-1-h3-sub") Образовательная онлайн-платформа
+                            h4.h4(data-lang-id="main-education-content-1-h4") Пройденные курсы:
+                            p.site-text-small(data-lang-id="main-education-content-1-h4-sub") веб-верстка базовый и&nbsp;продвинутый уровни, работа с&nbsp;git
+                          span.timeline__time.secondary.bold(data-lang-id="main-education-content-1-enddate") фев 2022
+                        .timeline__row
+                          span.timeline__time.secondary.bold(data-lang-id="main-education-content-2-startdate") 2018
+                          .wrapper
+                            h3.h3.primary(data-lang-id="main-education-content-2-h3") МГУ им. Ломоносова
+                            p.site-text-small(data-lang-id="main-education-content-2-h3-sub") Химический факультет
+                            h4.h4(data-lang-id="main-education-content-2-h4") Моя специализация:
+                            p.site-text-small(data-lang-id="main-education-content-2-h4-sub") биоорганическая химия
+                          span.timeline__time.secondary.bold(data-lang-id="main-education-content-2-enddate") 2012
+                .main__colums-col#work
+                  h2.h2(data-lang-id="main-experience-h2") &lt;опыт-работы/&gt;
+                  .site-container
+                    .timeline
+                      .timeline__line
+                      .timeline__content
+                        .timeline__row
+                          span.timeline__time.secondary.bold(data-lang-id="main-experience-content-1-startdate") 2022
+                          .wrapper
+                            h3.h3.primary(data-lang-id="main-experience-content-1-h3") Компания Millab
+                            p.site-text-small(data-lang-id="main-experience-content-1-h3-sub") Дистрибьютор лабораторного оборудования
+                            h4.h4(data-lang-id="main-experience-content-1-h4-1") Моя должность:
+                            p.site-text-small(data-lang-id="main-experience-content-1-h4-1-sub") менеджер по&nbsp;продажам
+                            h4.h4(data-lang-id="main-experience-content-1-h4-2") Мои задачи:
+                            p.site-text-small(data-lang-id="main-experience-content-1-h4-2-sub") Помимо стандартных задач менеджера по&nbsp;продажам в&nbsp;мои обязанности входили: улучшение и&nbsp;наполнение корпоративного сайта, настройка Яндекс.Директа, подготовка маркетинговых материалов, презентаций, а&nbsp;также перевод материалов с&nbsp;английского языка.
+                          span.timeline__time.secondary.bold(data-lang-id="main-experience-content-1-enddate") 2018
+                        .timeline__row
+                          span.timeline__time.secondary.bold(data-lang-id="main-experience-content-2-startdate") 2018
+                          .wrapper
+                            h3.h3.primary(data-lang-id="main-experience-content-2-h3") НИИ ФХБ им. Белозерского
+                            p.site-text-small(data-lang-id="main-experience-content-2-h3-sub") Научный институт физико-химической инженерии
+                            h4.h4(data-lang-id="main-experience-content-2-h4-1") Моя должность:
+                            p.site-text-small(data-lang-id="main-experience-content-2-h4-1-sub") научный сотрудник
+                            h4.h4(data-lang-id="main-experience-content-2-h4-2") Мои задачи:
+                            p.site-text-small(data-lang-id="main-experience-content-2-h4-2-sub") Научные исследования в&nbsp;сфере биохимии. Получение, выделение, очистка и&nbsp;анализ определенных ферментов. Генная инженерия. Выполнение расчетов in&nbsp;silico (симуляция молекулярной динамики, молекулярный докинг). Работа с&nbsp;научной литературой на&nbsp;английском языке.
+                          span.timeline__time.secondary.bold(data-lang-id="main-experience-content-2-enddate") 2015
+                .main__colums-col
+                  svg.cute-cat
+                    use(xlink:href="img/sprite.svg#cute-cat")
